@@ -1,0 +1,56 @@
+* {
+	color: #e7eaf6;
+}
+
+body {
+	background: #a2a8d3;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	margin: 20px auto;
+	width: 10%;
+	position: relative;
+	padding: 30px;
+	border: dashed 10px #38598b;
+}
+
+li {
+	color: #113f67;
+}
+
+hr {
+	border-style: dashed;
+	width: 20%;
+	color: black;
+	padding: 0;
+	margin: auto;
+}
+
+ul {
+	right: 25%;
+}
+
+img {
+	max-width: 10%;
+	left: 35%;
+	position: relative;
+	padding: 0;
+	margin: 10px auto;
+	border: solid 10px #014f86;
+}
+
+.bodyText {
+	left: 35%;
+	margin: 10px;
+	width: 200px;
+	position: relative;
+	padding: 20px;
+}
+
+#dogImage:hover {
+	border: solid 30px;
+	border-color: red;
+	width: 500px;
+}
