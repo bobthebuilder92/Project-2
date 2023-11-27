@@ -27,10 +27,52 @@
 			<img
 				src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1924&q=80" />
 		</a>
-		<p class="bodyText">(Images with a border around them go somewhere when you click them!)</p>
+		<p class="bodyText">
+			(Images with a border around them go somewhere when you click them!)
+		</p>
 		<h2 class="bodyText">That's a dog?</h2>
 		<ul>
 			<li class="bodyText">Sure is! You should try clicking her!</li>
 		</ul>
 	</body>
+	<script>
+		alert("doggos inbound");
+		function randomColor() {
+			var color = prompt("Pick a color!");
+			this.setAttribute("style", "background-color : " + color);
+			document.body.setAttribute("style", "background-color : " + color);
+		}
+		function changeFont() {
+			font = prompt("Font family");
+			this.setAttribute("style", "font-family : " + font);
+			document.body.children.setAttribute(
+				"style",
+				"font-family : " + font,
+			);
+		}
+
+		function addElement() {
+			var newElement = document.createElement(
+				prompt("What type of element do you want to add?"),
+			);
+			document.body.append(newElement);
+			newElement.innerHTML = prompt(
+				"What do you want your element to say?",
+			);
+		}
+		var button = document.createElement("button");
+		var button2 = document.createElement("button");
+		var button3 = document.createElement("button");
+		document.body.append(button);
+		document.body.append(button2);
+		document.body.append(button3);
+		button.innerHTML = "Random Color";
+		button2.innerHTML = "Random Font";
+		button3.innerHTML = "Create New Element";
+		button.addEventListener("click", randomColor);
+		button2.addEventListener("click", changeFont);
+		button3.addEventListener("click", addElement);
+		document.addEventListener("keyup", alert("You let go of a key"));
+		document.addEventListener("keydown", alert("You pushed a key"));
+	</script>
 </html>
